@@ -1,0 +1,10 @@
+This Ruby script enables data extraction from html pages at specified locations.
+It's useful for example if you want to rebuild a site.
+If you know the 'xpath' with the right classes or id names, you can extract either text or attributes such as src, alt, id...
+You need to save the web page on your computer, write the ylm file (an example is given in this repository),
+the script will extract the data for you and put it in a hash table (and also print it).
+See the commentaries in the other files for more details.
+
+---
+Yannig Colin for Shopeo
+07-24-2011

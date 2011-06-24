@@ -1,0 +1,31 @@
+#Input yaml file for cententExtractor.rb.
+#It's an array of hashes. Here is an example.
+#To use this you just have to respect this syntax and know the "xpath" of the data you want to extract.
+#For more information about the xpath go check this page: http://www.engineyard.com/blog/2010/getting-started-with-nokogiri/ .
+#If you want the text, put text in extract, else, the name of the attribute, like src, alt or id.
+---
+- key: title
+  xpath: h1/a
+  extract: text
+- key: ref
+  xpath: h2[@class="pd00"]
+  extract: text
+- key: priceHT
+  xpath: span[@class = "price_HT price"]
+  extract: text
+- key: colors
+  xpath: div[@id = "option_contener"]/div/select/option
+  extract: text
+- key: detail
+  xpath: div[@class = "dp09"]/p
+  extract : text
+- key: mainPicture
+  xpath: img[@id = "img1"]
+  extract: src
+- key: secondaryPictures
+  xpath: img[@class = "pic_another_pic"]
+  extract: src
+
+ 
+ 
+ 
